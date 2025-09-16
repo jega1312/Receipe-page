@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(330, 100%, 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-main {
+  margin: 7rem auto;
+}
+
+.one {
+  display: none;
+}
+
+.main-container {
+  background-color: hsl(0, 0%, 100%);
+  min-height: 40rem;
+  padding: 2.8rem;
+  border-radius: 1.4rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  width: 50rem;
+  border-radius: 1.2rem;
+}
+
+figure h1,
+p {
+  display: flex;
+  align-self: flex-start;
+}
+
+figure h1 {
+  color: hsl(24, 5%, 18%);
+  font-family: "Young Serif", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+figure p {
+  color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.prep-section {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.prep-section h3 {
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+}
+
+.prep-section ul {
+  padding-left: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prep-section ul li {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.prep-section ul li span {
+  font-weight: 700;
+}
+
+/* ::marker - Used to color the bullet list */
+.prep-section ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients-section {
+  border-bottom: 1px solid rgb(214, 211, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.ingredients-section h2 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  font-size: 1.6rem;
+}
+
+.ingredients-section ul {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ingredients-section ul li {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.ingredients-section ul li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.ingredients-section ul li:last-child {
+  margin-bottom: 2rem;
+}
+
+.instruction-section {
+  border-bottom: 1px solid rgb(214, 211, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.instruction-section h2 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  font-size: 1.6rem;
+}
+
+.instruction-section ol {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.instruction-section ol li {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  font-weight: 500;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.instruction-section ol li span {
+  font-weight: 700;
+}
+
+.instruction-section ol li::marker {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+.instruction-section ol li:last-child {
+  margin-bottom: 2rem;
+}
+
+.nutrition-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nutrition-section h2 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  font-size: 1.6rem;
+}
+
+.nutrition-section p {
+  color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.nutrition-section table {
+  border-collapse: collapse; /* Removes gap between two data in a row*/
+}
+
+.nutrition-section table td {
+  border-bottom: 1px solid rgb(214, 211, 211);
+}
+
+.nutrition-section .nutrients {
+  color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+.nutrition-section .values {
+  color: hsl(14, 45%, 36%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.nutrition-section .nutrients.second,
+.nutrition-section .values.second {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nutrition-section .nutrients.third,
+.nutrition-section .values.third {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nutrition-section .nutrients.last,
+.nutrition-section .values.last {
+  border-bottom: none;
+  padding-top: 1rem;
+}
+
+@media (max-width: 480px) {
+  .main-main {
+    margin: 0;
+  }
+
+  .main-container {
+    padding: 0 2.8rem 2.8rem 2.8rem;
+    border-radius: 0rem;
+  }
+
+  figure img {
+    border-radius: 0rem;
+    width: 100%;
+    display: none;
+  }
+
+  .main-main .one {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 50rem;
+  }
+
+  figure h1 {
+    margin-top: 2rem;
+  }
+}
