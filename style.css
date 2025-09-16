@@ -257,6 +257,17 @@ figure p {
   padding-top: 1rem;
 }
 
+.attribution {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Outfit", sans-serif;
+}
+
+.attribution a {
+  color: hsl(332, 51%, 32%);
+  text-decoration: none;
+}
+
 @media (max-width: 480px) {
   .main-main {
     margin: 0;
@@ -282,5 +293,15 @@ figure p {
 
   figure h1 {
     margin-top: 2rem;
+  }
+
+  .ingredients-section h2,
+  .instruction-section h2,
+  .nutrition-section h2 {
+    font-size: 2rem;
+  }
+
+  .attribution {
+    display: none;
   }
 }
